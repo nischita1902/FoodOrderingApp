@@ -17,7 +17,7 @@ class Admin_Panel:
         Quantity=input(f"Enter number of Qunatity: ")
         Stock=input(f'Enter the Stock Quantity of food: ')
         Price=float(input(f"Enter price per item of food: "))
-        Discount=(price*25)/100
+        Discount=(Price*25)/100
         food_dict={'FoodName':Food_name,'Quantity':Quantity,'Stock':Stock,'Price':Price,'Discount':Discount}
         self.main_food_dict[self.count]=food_dict
         with open('Food_add.json','w') as f:
