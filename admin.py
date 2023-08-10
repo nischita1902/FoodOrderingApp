@@ -25,12 +25,12 @@ class Admin_Panel:
         return self.main_food_dict
     
     def edit_food_items(self):
-        print("****************************Edit Food Items***********************************")
+      
         with open('Food_add.json','r') as f:
             data=json.load(f)
         for k,v in data.items():
             print(f'FoodID: {k} || Food_Details: {v}')
-            print('*'*50)
+
         food_id=input('Enter the FoodID you want to update: ')
         Field=input('Enter the field you want to update: ')
         updated_value=input('Enter the updated value: ')
@@ -44,14 +44,12 @@ class Admin_Panel:
             data=json.load(f)
         for k,v in data.items():
             print(f'FoodID: {k} || Food_Details: {v}')
-            print('*'*50)
 
     def remove_food_items(self):
         with open('Updated_Food.json','r') as f:
             Data=json.load(f)
         for k,v in Data.items():
             print(f'FoodID: {k} || Food_Details: {v}')
-            print('*'*50)
         remove_food=input('Enter FoodID which you want to delete: ')
         del Data[remove_food]
         return Data
