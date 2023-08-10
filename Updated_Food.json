@@ -1,9 +1,0 @@
-{
-    "1": {
-        "FoodName": "Fish Biryani",
-        "Quantity": "3",
-        "Price": 190.0,
-        "Discount": 47.5,
-        "Stock": "50"
-    }
-}
